@@ -21,6 +21,13 @@ import java.util.List;
 @RequestMapping(value = "/demo")
 public class DemoController {
 
+
+
+    @GetMapping(value = "/jenkins")
+    public String getDatas(){
+        return "我陈喜华， 一定能克服jenkins持续部署问题。。。";
+    }
+
     /**
      * 如果使用 阿里巴巴的 fastjson 插件，就不要使用像类 UserUtil 这种高度包装的类。
      *      1：先获取 Message。
