@@ -8,7 +8,9 @@ import com.example.demo.bean.UserVo;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * @ClassName: DemoController
@@ -24,9 +26,13 @@ public class DemoController {
 
 
     @GetMapping(value = "/jenkins")
-    public String getDatas(){
+    public Map<String, Object> getDatas(){
+        Map<String, Object> result = new HashMap<>();
+
         String msg = "我陈喜华， 曾想过要考研，可失败了。。。";
-        return msg;
+        result.put("code", 0);
+        result.put("msg", msg);
+        return result;
     }
 
     /**
