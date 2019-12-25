@@ -25,7 +25,8 @@ public class DemoController {
 
     @GetMapping(value = "/jenkins")
     public String getDatas(){
-        return "我陈喜华， 一定能克服jenkins持续部署问题。。。";
+        String msg = "我陈喜华， 曾想过要考研，可失败了。。。";
+        return msg;
     }
 
     /**
