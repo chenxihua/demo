@@ -25,7 +25,7 @@ public class DemoController {
 
 
 
-    @GetMapping(value = "/jenkins")
+    @GetMapping(value = "/docker")
     public Map<String, Object> getDatas(){
         Map<String, Object> result = new HashMap<>();
 
@@ -42,7 +42,7 @@ public class DemoController {
      */
 
 
-    @GetMapping(value = "/docker")
+    @GetMapping(value = "/jenkins")
     public String getDemo(){
         return "chenxihua, you can do docker success!";
     }
